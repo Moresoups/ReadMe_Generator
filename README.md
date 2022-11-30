@@ -24,8 +24,8 @@ Video tutorial: https://drive.google.com/file/d/1vaJ1DQQoTn1kn-r0b0nXkzAubsIJDCw
 all code is mine with breif starter code setup thanks to the NH coding boodcamp
 
 ## Screenshots
-<img src= "other/Screenshot 2022-11-30 152731.png">
-<img src= "other/Screenshot 2022-11-30 152827.png">
+<img src= "Develop/other/Screenshot 2022-11-30 152731.png">
+<img src= "Develop/other/Screenshot 2022-11-30 152827.png">
 
 ## Repo Link
 https://github.com/Moresoups/MusicCombo/blob/main/README.md
