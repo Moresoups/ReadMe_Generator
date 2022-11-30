@@ -22,27 +22,32 @@ function promptUser() {
         {
             type: "input",
             name: "Motivation",
-            message: "What was your motivation?"
+            message: "What was your motivation?",
+            default: ""
         },
         {
             type: "input",
             name: "disc",
-            message: "Please describe your project"
+            message: "Please describe your project",
+            default: ""
         },
         {
             type: "input",
             name: "credits",
-            message: "please list everyone that worked on this project"
+            message: "please list everyone that worked on this project",
+            default: ""
         },
         {
             type: "input",
             name: "cont",
-            message: "please list instuctions for how to contribute to this project"
+            message: "please list instuctions for how to contribute to this project",
+            default: ""
         },
         {
             type: "input",
             name: "test",
-            message: "Please provide test instructions if applicable"
+            message: "Please provide test instructions if applicable",
+            default: ""
         },
         {
             type: "checkbox",
@@ -66,13 +71,15 @@ function promptUser() {
         {
             type: "input",
             name: "repo",
-            message: "add a repo link to your readme"
+            message: "add a repo link to your readme",
+            default: ""
         }
         ,
         {
             type: "input",
             name: "other",
-            message: "you may add any aditional notes here"
+            message: "you may add any aditional notes here",
+            default: ""
         }
     ]);
 }
