@@ -11,7 +11,7 @@ function promptUser() {
         {
             type: "input",
             name: "project_title",
-            message: "What is the name of your project (required)?", 
+            message: "What is the name of your project (required)?",
             validate: function (answer) {
                 if (answer.length < 1) {
                     return console.log("please enter the name of your project (REQUIRED)");
@@ -33,6 +33,11 @@ function promptUser() {
             type: "input",
             name: "credits",
             message: "please list everyone that worked on this project"
+        },
+        {
+            type: "input",
+            name: "cont",
+            message: "please list instuctions for how to contribute to this project"
         },
         {
             type: "input",
@@ -58,7 +63,7 @@ function promptUser() {
             name: "github",
             message: "Enter your github username"
         },
-         {
+        {
             type: "input",
             name: "repo",
             message: "add a repo link to your readme"
@@ -84,4 +89,5 @@ function writeToFile(fileName, data) {
 
 
 // Function call to initialize app
-init();
+
+promptUser();
