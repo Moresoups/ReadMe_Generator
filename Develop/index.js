@@ -34,6 +34,25 @@ const questions = () => {
         },
         {
             type: "input",
+            name: "Installation",
+            message: "how do you install the requirment for your project",
+            default: "no instals are required"
+        },
+        {
+            type: "input",
+            name: "usage",
+            message: "step by step explain how to use your project (required)",
+            validate: (titleInput) => {
+                if (titleInput) {
+                    return true;
+                } else {
+                    console.log("you must explain how to use your app");
+                    return false;
+                }
+            },
+        },
+        {
+            type: "input",
             name: "credits",
             message: "please list everyone that worked on this project",
             default: ""

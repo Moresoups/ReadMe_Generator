@@ -11,11 +11,12 @@ ${responseObject.Motivation}
 
 
 ## Table of Contents
-- [Motivation](#Motivation)
+- [Installation](#Installation)
 - [Usage](#usage)
 - [credits](#credits)
 - [How to Contribute](#cont)
 - [Tests](#test)
+- [Languages](#languages)
 - [License](#license)
 
 
@@ -25,8 +26,6 @@ ${responseObject.installation}
 ## Usage
 ${responseObject.usage}
 
-## Built With:
-* ${responseObject.languages}
 
 ## Credits
 ${responseObject.credits}
@@ -36,14 +35,21 @@ ${responseObject.credits}
 you can email me at ${responseObject.email} if you have questions
 
 ## Github Link
-https://github.com/${responseObject.username}
+https://github.com/${responseObject.github}
+
 ## Tests
 ${responseObject.testing}
+
+## Built With:
+* ${responseObject.languages}
+
 ## License
 ${responseObject.license}
 
-## Additional Notes
-${responseObject.other}`
+# Additional Notes and extra repo link
+${responseObject.other}
+${responseObject.repo}
+`
 
 }
 
