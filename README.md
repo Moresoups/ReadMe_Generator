@@ -29,8 +29,6 @@ all code is mine with breif starter code setup thanks to the NH coding boodcamp
 
 
 ## Repo Link
-https://github.com/Moresoups/MusicCombo/blob/main/README.md
+https://github.com/Moresoups/ReadMe_Generator
 
-## Website Link
-https://moresoups.github.io/MusicCombo/
 
