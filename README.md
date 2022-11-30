@@ -25,7 +25,8 @@ all code is mine with breif starter code setup thanks to the NH coding boodcamp
 
 ## Screenshots
 <img src= "Develop/other/Screenshot 2022-11-30 152731.png">
-<img src= "Develop/other/Screenshot 2022-11-30 152827.png">
+<img src= "Develop/other/Screenshot 2022-11-30 152827.png"> 
+
 
 ## Repo Link
 https://github.com/Moresoups/MusicCombo/blob/main/README.md
