@@ -46,7 +46,7 @@ ${responseObject.testing}
 ## License
 ${responseObject.license}
 
-# Additional Notes and extra repo link
+## Additional Notes and extra repo link
 ${responseObject.other}
 ${responseObject.repo}
 `

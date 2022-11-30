@@ -34,7 +34,7 @@ const questions = () => {
         },
         {
             type: "input",
-            name: "Installation",
+            name: "installation",
             message: "how do you install the requirment for your project",
             default: "no instals are required"
         },
@@ -88,8 +88,8 @@ const questions = () => {
             message: "License?",
             name: "license",
             choices: [
-                "[MIT License](LICENSE.txt)",
-                "[GNU GPLv3 License](COPYING.txt)",
+                "[MIT License]",
+                "[GNU GPLv3 License]",
             ]
         },
         {
