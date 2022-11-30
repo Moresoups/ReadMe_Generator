@@ -5,19 +5,20 @@ const fs = require("fs");
 const generateMarkdown = require("./utils/generateMarkdown");
 
 // TODO: Create an array of questions for user input
-function promptUser() {
-
+const questions = () => {
     return inquirer.prompt([
         {
             type: "input",
             name: "project_title",
-            message: "What is the name of your project (required)?",
-            validate: function (answer) {
-                if (answer.length < 1) {
-                    return console.log("please enter the name of your project (REQUIRED)");
+            message: "What is the name of your project? (required)",
+            validate: (titleInput) => {
+                if (titleInput) {
+                    return true;
+                } else {
+                    console.log("you must enter a project title");
+                    return false;
                 }
-                return true;
-            }
+            },
         },
         {
             type: "input",
@@ -51,6 +52,20 @@ function promptUser() {
         },
         {
             type: "checkbox",
+            name: "languages",
+            message: "What did you build this project with? (Check all that apply)",
+            choices: [
+                "Javascript",
+                "HTML",
+                "CSS",
+                "ES6",
+                "jQuery",
+                "Bootstrap",
+                "Node.js",
+            ],
+        },
+        {
+            type: "checkbox",
             message: "License?",
             name: "license",
             choices: [
@@ -66,7 +81,15 @@ function promptUser() {
         {
             type: "input",
             name: "github",
-            message: "Enter your github username"
+            message: "Enter your github username (required)",
+            validate: (githubInput) => {
+                if (githubInput) {
+                    return true;
+                } else {
+                    console.log("you must enter your username");
+                    return false;
+                }
+            },
         },
         {
             type: "input",
@@ -94,6 +117,13 @@ function writeToFile(fileName, data) {
     });
 }
 
+function promptUser() {
+    questions()
+        .then((response) => {
+            const madeReadMe = generateMarkdown(response);
+            writeToFile('README.md', madeReadMe);
+        });
+}
 
 // Function call to initialize app
 
